@@ -1,0 +1,59 @@
+.hf {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+/*flex box*/
+/*
+.main {
+    background-color: grey;
+    color: white;
+    display: flex;
+    /*flex-wrap: wrap;*
+    width: 100%;
+    padding:20px 0px;
+    gap: 20px;
+    justify-content: space-around;
+}
+*/
+
+.main {
+    background-color: grey;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    width: 100%;
+    padding:20px 0px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+    /*flex:1 1 calc(25% - 20px);
+    width: 25px;*/
+}
+
+.sidebar {
+    background-color: green;
+    box-sizing: border-box;
+    /*flex: 0 1 300px;*/
+    padding: 20px;
+    
+}
+/*
+.sectionB{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}*/
+
+.sectionB{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
